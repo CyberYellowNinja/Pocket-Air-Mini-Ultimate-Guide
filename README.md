@@ -88,7 +88,7 @@ Open RetroArch and grant permissions.
 * **Speed Hack:** Open `Android/data/com.retroarch.aarch64/files/retroarch.cfg` with **QuickEdit**. Add `input_threaded = "false"` at the bottom.
 * **Shaders:** Use `LCD-Grid-V2` for Handhelds and `CRT-Lottes` for TV consoles. Avoid "Mega Bezel".
 
-  > [!TIP]
+> [!TIP]
 > CRT-Lottes is visually accurate but heavier.
 >
 > For demanding systems (N64 / Dreamcast), consider using:
@@ -135,7 +135,7 @@ If you want to experiment beyond the default presets:
 * **Advanced:**
     * Backend Multithreading: **ON** | Shader Cache: **ON** | V-Sync: **OFF**
    
-      > [!TIP]
+> [!TIP]
 > **Mario Kart Double Dash Fix:** If you experience a blue overlay during gameplay, it is a Vulkan EFB quirk. To fix it, go to **Dolphin Hacks** and disable (**OFF**) the setting **"Store EFB Copies to Texture Only"**.
 
 * **Wii Controls (FPS Setup):** Extension: **Classic**. Map ZL/ZR to L1/R1 and Triggers to L2/R2.
