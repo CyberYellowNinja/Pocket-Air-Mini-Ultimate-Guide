@@ -86,10 +86,10 @@ Open RetroArch and grant permissions.
     * **Save State: R1** | **Load State: L1** | Screenshots: **Y**.
 * **Directories:** Settings > Directory. Point **System/BIOS**, **Saves**, and **Save States** to their respective folders on your **SD Card**.
 * **Speed Hack:** Open `Android/data/com.retroarch.aarch64/files/retroarch.cfg` with **QuickEdit**. Add `input_threaded = "false"` at the bottom.
-* **Shaders:** Use `LCD-Grid-V2` for Handhelds and `CRT-Lottes` for TV consoles. Avoid "Mega Bezel".
+* **Shaders:** Use `LCD-Grid-V2` for Handhelds and lightweight CRT shaders for TV consoles. Avoid "Mega Bezel".
 
 > [!TIP]
-> CRT-Lottes is visually accurate but heavier.
+> CRT-style shaders can look very accurate but may be heavier depending on the preset.
 >
 > For demanding systems (N64 / Dreamcast), consider using:
 > - CRT-Lottes-fast
