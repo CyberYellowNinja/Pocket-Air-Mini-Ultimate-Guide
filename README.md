@@ -594,6 +594,26 @@ DS/3DS (MelonDS/Azahar – A for DS, B for 3DS)
 > [!IMPORTANT]
 > **Legal Note:** Only use ROMs from games you own.
 
+## 🤖 About the Replies You'll See Here
+
+Day-to-day upkeep of this guide — replies to issues, clarifications, and
+updates — is handled with **Grendizer**, an AI assistant built on this guide,
+posting under my account.
+
+- **Grendizer drafts, I decide.** Every reply and guide update is reviewed
+  and approved by me before it's posted — typically once a week. If it's
+  posted here, my eyes were on it.
+- **Every question gets answered — within the week.** Replies no longer
+  depend on me having free hours.
+- Setups come from my real testing on the Pocket Air Mini. Grendizer works
+  from that record and can still miss something: hardware and drivers vary.
+  If a fix doesn't work on your unit, say so in an issue — corrections are
+  how this guide got good.
+
+Full disclosure pinned on issue #1.
+
+---
+
 ## ⚠️ Disclaimer
 
 This guide is for educational purposes only. 
