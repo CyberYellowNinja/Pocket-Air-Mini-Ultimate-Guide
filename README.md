@@ -16,7 +16,31 @@ If this guide saves you hours of frustration and helps you build your dream hand
        
 ---
 
+## 📋 Table of Contents
+
+1. [🛠️ Phase 1: Preparation & Materials](#phase-1-preparation--materials)
+2. [💾 SD Card Setup & Format](#sd-card-setup--format)
+3. [🍳 Phase 2: Mixing the Ingredients](#phase-2-mixing-the-ingredients)
+4. [📂 Phase 3: Finding Your Library](#phase-3-finding-your-library)
+5. [🎨 Phase 4: ES-DE Initial Setup & Folders](#phase-4-es-de-initial-setup--folders)
+6. [⚙️ Phase 5: Emulator Configuration](#phase-5-emulator-configuration)
+7. [🎨 Phase 6: ES-DE Advanced Setup & Scraping](#phase-6-es-de-advanced-setup--scraping)
+8. [⚡ Phase 7: System Optimization & Battery Health](#phase-7-system-optimization--battery-health)
+9. [⚡ Phase 7.5: Performance & Audio Optimization Profiles](#phase-75-performance--audio-optimization-profiles)
+10. [🥷 Phase 8: The Dark Arts](#phase-8-the-dark-arts)
+11. [📱 Phase 9: Removing Touch Overlays](#phase-9-removing-touch-overlays)
+12. [🚀 Phase 10: Alternative OS: GammaOS](#phase-10-alternative-os-gammaos)
+13. [📜 Appendix: Must-Play Games per System](#appendix-must-play-games-per-system)
+14. [🤝 Community Contributions & Credits](#community-contributions--credits)
+
+> [!NOTE]
+> Use the links above to jump directly to any section.
+
+---
+
 ## 🛠️ Phase 1: Preparation & Materials
+
+<span>🟢 Beginner</span>
 
 Before we begin, ensure you have the following ready:
 * **The Device:** Ayaneo Pocket Air Mini (charged to at least 60%).
@@ -32,6 +56,8 @@ Before we begin, ensure you have the following ready:
 ---
 
 ## 💾 SD Card Setup & Format
+
+<span>🟢 Beginner</span>
 
 Your SD card stores all ROMs, BIOS files, emulator configs, and save states. Getting this right upfront saves pain later.
 
@@ -76,6 +102,8 @@ The guide uses standard gaming controller terminology. Here is a quick reference
 
 ## 🍳 Phase 2: Mixing the Ingredients (The Recipe for Success)
 
+<span>🟢 Beginner</span>
+
 ### **1. System & Firmware Updates**
 Ensure the "brain" of your device is up to date.
 1. Open the **System Update** app. Install all updates and **Restart**.
@@ -97,6 +125,8 @@ Crucial for heavy systems like PS2 or Switch:
 
 ## 📂 Phase 3: Finding Your Library (The Directions)
 
+<span>🟢 Beginner</span>
+
 I cannot provide direct links, but I can show you the way.
 
 * **The Starter Pack:** Search Google for **"tiny best set: go! archive"**.
@@ -107,6 +137,8 @@ I cannot provide direct links, but I can show you the way.
 ---
 
 ## 🎨 Phase 4: ES-DE Initial Setup & Folders
+
+<span>🟡 Intermediate</span>
 
 1. Open **ES-DE**.
 2. **Data Directory:** Select your **SD Card** -> Create folder `ES-DE` -> Select **"Use this folder"**.
@@ -119,6 +151,8 @@ Using **ZArchiver**, navigate to your downloaded `tiny set best go-games`:
 2. **ROMs:** Move game files into their corresponding folders inside the `ROMS` directory on your SD card. 
 3. **Pro Tip:** Delete the zip files after extraction to save space!
 ## ⚙️ Phase 5: Emulator Configuration (The Pro Setup)
+
+<span>🟡 Intermediate</span>
 
 ### **1. RetroArch (Multi-System Hub)**
 Open RetroArch and grant permissions.
@@ -287,6 +321,8 @@ This combo reduces GPU overhead while preserving visual integrity in gameplay-he
 
 ## 🎨 Phase 6: ES-DE Advanced Setup & Scraping
 
+<span>🟡 Intermediate</span>
+
 Make your collection look professional and set ES-DE as your permanent home.
 
 1. **Interface:** Start Menu > UI Settings > Theme Downloader. Download **"Art Book Next"**.
@@ -314,6 +350,8 @@ Make your collection look professional and set ES-DE as your permanent home.
 
 ## ⚡ Phase 7: System Optimization & Battery Health
 
+<span>🟡 Intermediate</span>
+
 ### **1. Developer Performance Tweaks**
 Go to **Settings > System > Developer Options**:
 * **Window/Transition/Animator Scale:** Set all to **0x (Off)**.
@@ -335,6 +373,8 @@ Go to **Settings > System > Developer Options**:
 ---
 
 ## 🚀 Phase 7.5: Performance & Audio Optimization Profiles
+
+<span>🟠 Advanced</span>
 
 This section applies calibrated thermal and audio tuning for stable high-performance operation on the Ayaneo Pocket Air Mini.
 
@@ -404,6 +444,8 @@ After applying both profiles:
 ---
 
 ## 🥷 Phase 8: The Dark Arts (System Debloating)
+
+<span>🔴 Advanced</span>
 This stage will disable unnecessary system background processes to free up RAM and CPU cycles. We will use **Shizuku**, **QuickEdit**, and **Termux**.
 
 #### 1. Setup Shizuku
@@ -510,6 +552,8 @@ pm enable com.google.android.ims
 
 ## 📱 Phase 9: Removing Touch Overlays
 
+<span>🟢 Beginner</span>
+
 Standalone emulators often enable touch icons by default, which can be distracting on a controller-first handheld.  
 Use the following paths to hide them for a clean, console-like experience:
 
@@ -537,6 +581,8 @@ If your collection is massive and you want ES-DE to open instantly, you can disa
 > If you add new games later, you must manually scan via **Menu** > **Utilities** > **Rescan ROM Directory**.
 
 ## 🚀 Phase 10 — Alternative OS: GammaOS
+
+<span>🔴 Advanced</span>
 
 > [!WARNING]
 > **GammaOS replaces your stock OS.** Not a debloat — a full OS replacement. If you are happy with stock Android + Dark Arts (Phase 8), skip this phase entirely.
