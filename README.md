@@ -115,6 +115,9 @@ Crucial for heavy systems like PS2 or Switch:
 2. Go to **Device -> Virtual Memory Management**.
 3. Set the value to **3GB** and enable the **Swap** switch below it.
 
+> [!NOTE]
+> **2GB vs 3GB:** The guide recommends 3GB virtual memory for all configurations. If you only play systems up to and including PS1, N64, PSP, and Genesis, 2GB *may* be sufficient. Anything above PS1 (PS2, GC, Wii) or running multiple emulators simultaneously benefits significantly from the 3GB setting. When in doubt, leave it at 3GB.
+
 ### **3. Setting up Flud (The Download Manager)**
 1. Open **Flud** and grant permissions.
 2. Tap the Menu (top left) -> Select **SD Card**.
@@ -150,6 +153,10 @@ Using **ZArchiver**, navigate to your downloaded `tiny set best go-games`:
 1. **BIOS:** Copy everything from the `bios` folder and the `expansion-64` folder inside the zip to the `BIOS` folder on your **SD Card**.
 2. **ROMs:** Move game files into their corresponding folders inside the `ROMS` directory on your SD card. 
 3. **Pro Tip:** Delete the zip files after extraction to save space!
+
+
+> [!NOTE]
+> **Daijishō as Default Launcher — After Firmware Updates:** If you use Daijishō as your default launcher and receive a firmware update from Ayaneo, the update process may reset your default launcher to the stock Ayaneo launcher. After any firmware update, go to **Settings → Apps → Default Apps → Home App** and re-select Daijishō. *Source: reported — known Android behavior pattern, PAM-specific confirmation pending.*
 ## ⚙️ Phase 5: Emulator Configuration (The Pro Setup)
 
 <span>🟡 Intermediate</span>
@@ -359,6 +366,11 @@ Go to **Settings > System > Developer Options**:
 * **Disable HW Overlays:** **ON**.
 
 > [!NOTE]
+> **Hardware Overlays — Community Conflict:** The Dark Arts approach recommends disabling hardware overlays for better GPU performance. However, uriuri89 (BruhMeh guide) reports that keeping hardware overlays enabled has **no measurable performance benefit** in testing and may increase GPU rendering overhead in some cases.
+>
+> **Current guidance:** The guide defaults to the Dark Arts approach (disable HW overlays). If you experience issues or want to test both: toggle this setting, run your target emulator for 5–10 minutes, and compare. Either setting can be correct depending on your specific unit, firmware version, and emulator. If in doubt, try both and keep whichever works better.
+
+> [!NOTE]
 > On Android 11, Background Process Limit resets after a full shutdown (cold boot).  
 > Sleep mode does not reset it.  
 > If you power the device off completely, you will need to set it again.
@@ -368,6 +380,9 @@ Go to **Settings > System > Developer Options**:
 2. Set the **Charge Alarm to 80%**.
 3. Always unplug at 80% to maximize the lifespan of your PAM's internal battery.
 
+> [!WARNING]
+> **Screen Ghosting — Known PAM Hardware Characteristic:** Some Pocket Air Mini units exhibit visible ghosting or motion blur on the 4.2" display, particularly with retro games that have fast-moving elements or high-contrast visuals. This is a hardware panel characteristic — no settings fix it. If ghosting is distracting, try slightly reducing emulator speed (RetroArch: Fast Forward → ~1.5x) to reduce perceived motion blur. *Sources: r/SBCGaming, retrohandhelds.gg.*
+
 ---
 
 ---
@@ -375,6 +390,18 @@ Go to **Settings > System > Developer Options**:
 ## 🚀 Phase 7.5: Performance & Audio Optimization Profiles
 
 <span>🟠 Advanced</span>
+### AYASpace Quick Menu (IO Button)
+
+If your PAM has the AYASpace app installed, pressing the **IO button** (the small button on the side of the device) opens the AYASpace quick menu at any time — even in-game. From here you can:
+- Switch performance profiles (gaming, balanced, battery saver)
+- Adjust fan speed manually
+- Access the device equalizer
+
+This is a fast way to tweak performance or fan settings without leaving your game. The guide's Phase 7.5 profiles cover the equivalent settings for users who don't have AYASpace or prefer manual configuration.
+
+> [!NOTE]
+> The IO button behavior depends on your current firmware and AYASpace version. If the quick menu doesn't appear, check that AYASpace is installed and up to date.
+
 
 This section applies calibrated thermal and audio tuning for stable high-performance operation on the Ayaneo Pocket Air Mini.
 
