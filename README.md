@@ -213,7 +213,7 @@ If you want to experiment beyond the default presets:
     * Scaled EFB Copy: **ON** | Per-Pixel Lighting: **OFF** | Force Texture Filtering: **OFF**
 * **Hacks:**
     * Skip EFB Access from CPU: **ON** | Ignore Format Changes: **ON**
-    * Store EFB Copies to Texture Only: **ON** | Defer EFB Copies to RAM: **ON**
+    * Store EFB Copies to Texture Only: **ON**
 * **Performance / CPU:**
     * Dual Core: **ON** | Emulated CPU Clock Speed: **60% – 70%** 
 * **Advanced:**
@@ -750,6 +750,18 @@ GammaOS is a custom Android distribution for select handheld devices that ships 
 - Re-apply GammaEQ and fan settings through the GammaOS settings app
 - Reconfigure ES-DE from scratch
 - Consider disabling GammaRGB in Settings to reduce background CPU overhead
+
+### If the flash goes wrong
+
+> [!WARNING]
+> If your device fails to boot after flashing GammaOS, you need your stock firmware backup to recover. Without it, the device cannot be restored.
+
+1. **Device won't boot at all:** Hold Volume+ + Power for 10 seconds to enter recovery mode. Select **Wipe data/factory reset** to return to factory state, then reflash your stock backup using Ayaneo's official recovery tool.
+2. **Boot loop or stuck on logo:** Reflash GammaOS using the same USB cable method. An interrupted flash can leave the partition table in an inconsistent state — re-flashing often resolves it.
+3. **WiFi/Bluetooth broken after flash:** A known issue with some GammaOS builds. Requires a stock firmware restore to fix.
+4. **No backup, device bricked:** Contact Ayaneo support with your device serial number. GammaOS flashing voids the official warranty in most cases.
+
+The only guaranteed recovery path is a valid stock firmware backup made before flashing. If you skipped this step, recovery options are very limited.
 
 ### Who should and shouldn't flash
 
