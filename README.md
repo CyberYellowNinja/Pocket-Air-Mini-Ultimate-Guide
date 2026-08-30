@@ -363,6 +363,10 @@ Make your collection look professional and set ES-DE as your permanent home.
 Go to **Settings > System > Developer Options**:
 * **Window/Transition/Animator Scale:** Set all to **0x (Off)**.
 * **Background Process Limit:** Set to **2**.
+* **Play Protect:** Disabled. In **Google Play Store → Profile → Play Protect → Settings**, turn off **Scan apps with Play Protect**. Install your trusted apps before disabling.
+* **Location Services:** Disabled. Go to **Settings → Location** and turn off Location. Also disable Wi-Fi and Bluetooth scanning.
+* **Auto-Sync:** Disabled. Go to **Settings → Accounts** and turn off **Automatically sync app data**.
+* **Logging:** Disabled. Search Settings for **Logger Buffer Size** and turn it off.
 * **Disable HW Overlays:** **ON**.
 
 > [!NOTE]
@@ -576,6 +580,88 @@ pm enable com.google.android.ims
 >
 > Debloating mainly improves long-session stability rather than raw FPS.
 > If your system is already stable, this phase is optional.
+### 3. Google Play Services Hardening
+
+After disabling packages with Canta, further reduce Google Play Services background activity with these ADB commands. Run these after the Canta debloating steps.
+
+**Reduce GMS background activity:**
+
+> [!SOURCE]
+> Commands from [BruhMeh PAM Stock OS Optimization Guide](https://github.com/BruhMeh/PAM-Stock-OS-Optimization-Guide), §04-01 & §04-02
+
+```bash
+adb shell cmd appops set com.google.android.gms RUN_IN_BACKGROUND ignore
+adb shell am set-standby-bucket com.google.android.gms restricted
+```
+
+**Reduce Play Store background activity:**
+
+> [!SOURCE]
+> Commands from [BruhMeh PAM Stock OS Optimization Guide](https://github.com/BruhMeh/PAM-Stock-OS-Optimization-Guide), §04-01 & §04-02
+
+```bash
+adb shell cmd appops set com.android.vending RUN_IN_BACKGROUND ignore
+adb shell am set-standby-bucket com.android.vending restricted
+```
+
+**Restrict Gboard:**
+
+> [!SOURCE]
+> Commands from [BruhMeh PAM Stock OS Optimization Guide](https://github.com/BruhMeh/PAM-Stock-OS-Optimization-Guide), §04-01 & §04-02
+
+```bash
+adb shell cmd appops set com.google.android.inputmethod.latin RUN_IN_BACKGROUND ignore
+adb shell am set-standby-bucket com.google.android.inputmethod.latin restricted
+```
+
+**Block OTA updater from running in background:**
+
+> [!SOURCE]
+> Commands from [BruhMeh PAM Stock OS Optimization Guide](https://github.com/BruhMeh/PAM-Stock-OS-Optimization-Guide), §04-01 & §04-02
+
+```bash
+adb shell cmd appops set com.ayaneo.update RUN_IN_BACKGROUND ignore
+adb shell am set-standby-bucket com.ayaneo.update restricted
+```
+
+> [!NOTE]
+> These commands restrict background activity only — Google Play Store still updates apps normally. These are among the highest-impact optimizations for idle battery and background CPU.
+
+### 4. Troubleshooting Common Issues
+
+**Google Play Services errors after debloating:**
+If you see Play Services errors, re-enable the specific package via Canta. Run the AppOps commands above to fine-tune without fully re-enabling `com.google.android.gms`.
+
+**Play Store won't update apps:**
+Verify `com.android.vending` is not fully disabled. Re-enable and re-run the AppOps commands if needed.
+
+**Emulator performance issues after debloating:**
+Re-run AOT compilation to re-optimize affected emulators:
+
+> [!SOURCE]
+> Commands from [BruhMeh PAM Stock OS Optimization Guide](https://github.com/BruhMeh/PAM-Stock-OS-Optimization-Guide), Appendix B
+
+```bash
+adb shell cmd package compile -m speed -a
+```
+
+Or compile a single emulator:
+
+```bash
+adb shell cmd package compile -m speed -f <package_name>
+```
+
+**After a firmware reset:**
+Re-run the Canta steps and the ADB commands above after any firmware update. Updates can restore disabled packages and reset App Standby buckets.
+
+### 5. Automated Scripts (Optional — Advanced Users)
+
+For automated RetroArch installation, shader configuration, and first-run optimization, see the **Ayaneo Handheld Scripts** collection by BruhMeh:
+
+→ [github.com/BruhMeh/Ayaneo-Handheld-Scripts](https://github.com/BruhMeh/Ayaneo-Handheld-Scripts)
+
+Includes: automated RetroArch nightly + cores + shaders, performance tuning scripts, and display refresh rate optimization. Use these to automate the setup instead of configuring manually.
+
 
 ## 📱 Phase 9: Removing Touch Overlays
 
