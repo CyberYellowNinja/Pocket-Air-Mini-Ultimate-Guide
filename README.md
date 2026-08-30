@@ -20,7 +20,7 @@ If this guide saves you hours of frustration and helps you build your dream hand
 
 Before we begin, ensure you have the following ready:
 * **The Device:** Ayaneo Pocket Air Mini (charged to at least 60%).
-* **Storage:** A high-quality MicroSD card (128GB to 512GB+ recommended).
+* **Storage:** A high-quality MicroSD card (128GB to 512GB+ recommended). See [SD Card Setup](#sd-card-setup--format) below for format and mount guidance.
 * **Software:** Download these apps from the Play Store or their official sites:
   * **Frontend:** ES-DE (EmulationStation Desktop Edition)
   * **File Managers:** MiXplorer or ZArchiver
@@ -28,6 +28,49 @@ Before we begin, ensure you have the following ready:
   * **Editors:** QuickEdit
   * **System Tools:** AccuBattery, Shizuku, Termux
   * **Emulators:** RetroArch, Dolphin, NetherSX2, PPSSPP, Duckstation, Azahar, MelonDS, Mupen64Plus FZ.
+
+---
+
+## 💾 SD Card Setup & Format
+
+Your SD card stores all ROMs, BIOS files, emulator configs, and save states. Getting this right upfront saves pain later.
+
+### Which format: exFAT or FAT32?
+
+| Format | Pros | Cons |
+|--------|------|------|
+| **exFAT** (recommended) | No 4GB file limit — works with PS2, GC, and Wii ISOs without splitting | Slightly less compatible with some USB adapters and very old devices |
+| **FAT32** | Maximum compatibility across devices and operating systems | 4GB file size limit — ROMs larger than 4GB must be split or you must use a tool to split them |
+
+**Use exFAT** if you play PS2, GameCube, or Wii games (ISOs often exceed 4GB). Use FAT32 only if you only play PS1, N64, PSP, Genesis, SNES, and smaller ROMs — or if you need the SD card to work across maximum devices.
+
+### Mount: External storage, not adoptable storage
+
+Always use your SD card as **external portable storage** — not as internal adoptable storage. The difference:
+- **External (portable):** The SD card shows up as removable media. ES-DE points to folders on it. If you swap cards, you keep your system settings.
+- **Adoptable (internal):** Android encrypts and ties the SD card to your device. You lose it if you format, and it is harder to back up.
+
+The guide's ES-DE setup uses the external approach: `SD Card > ES-DE`, `SD Card > ROMS`. This is intentional.
+
+### Quick setup checklist
+
+1. Format the SD card as exFAT using your PC or the Ayaneo settings
+2. Create these folders on the SD card: `ES-DE`, `ROMS`, `BIOS`, `Saves`, `Save States`
+3. In ES-DE, set **Data Directory** to `SD Card > ES-DE` and **ROMs Directory** to `SD Card > ROMS`
+4. Point RetroArch and other emulators to the SD card folders for saves and states
+
+### 🎮 Button Naming Reference
+
+The guide uses standard gaming controller terminology. Here is a quick reference for the Pocket Air Mini:
+
+| Name | Location | Used for in this guide |
+|------|----------|----------------------|
+| L1 / R1 | Top-left / Top-right shoulder buttons (top bumpers, light press) | Quick actions, Wii extension mapping |
+| L2 / R2 | Bottom-left / Bottom-right triggers (deep press) | Fast-forward (RetroArch), slow-mo, analog triggers |
+| L3 / R3 | Click down on the left / right analog stick | RetroArch hotkey enable (L3+R3 opens menu), in-game functions |
+
+> [!TIP]
+> When the guide mentions pressing **L3** or **R3**, it means clicking the analog sticks down until you feel a click — the sticks themselves are buttons on the Pocket Air Mini.
 
 ---
 
@@ -136,7 +179,7 @@ If you want to experiment beyond the default presets:
     * Backend Multithreading: **ON** | Shader Cache: **ON** | V-Sync: **OFF**
    
 > [!TIP]
-> **Mario Kart Double Dash Fix:** If you experience a blue overlay during gameplay, it is a Vulkan EFB quirk. To fix it, go to **Dolphin Hacks** and disable (**OFF**) the setting **"Store EFB Copies to Texture Only"**.
+> **Mario Kart: Double Dash Blue Overlay Fix:** If you experience a blue overlay during gameplay, it is a Vulkan/EFB quirk on the Mali-G76 GPU. The standard fix is to go to **Dolphin Hacks** and set **"Store EFB Copies to Texture Only"** to **OFF**. If that doesn't resolve it, the definitive fix is to switch the graphics **Backend** from Vulkan to **OpenGL** in `Dolphin > Graphics > General`. The compatibility table rates this game **A (OpenGL if Vulkan EFB issues)** — this is exactly that case. If both settings fail, a cold-reboot (full shutdown, not restart) can clear persistent EFB state.
 
 * **Wii Controls (FPS Setup):** Extension: **Classic**. Map ZL/ZR to L1/R1 and Triggers to L2/R2.
 
@@ -493,6 +536,83 @@ If your collection is massive and you want ES-DE to open instantly, you can disa
 > [!NOTE]
 > If you add new games later, you must manually scan via **Menu** > **Utilities** > **Rescan ROM Directory**.
 
+## 🚀 Phase 10 — Alternative OS: GammaOS
+
+> [!WARNING]
+> **GammaOS replaces your stock OS.** Not a debloat — a full OS replacement. If you are happy with stock Android + Dark Arts (Phase 8), skip this phase entirely.
+> **Prerequisite: back up your stock firmware before flashing.** Follow Ayaneo's official backup guide first. If the flash goes wrong, you need the backup to recover.
+
+### What is GammaOS?
+
+GammaOS is a custom Android distribution for select handheld devices that ships with a lean, gaming-focused base. It removes Ayaneo's pre-installed bloatware and replaces the stock OS entirely.
+
+### What you get over stock + Dark Arts (v1.3.2 confirmed)
+
+- **4K hardware video decode** — YouTube, Netflix, and streaming apps use full hardware-accelerated decoding up to 2160p (stock firmware shipped with broken HW decode, forcing software fallback with dropped frames and high CPU usage)
+- **Hardware video encoding** — scrcpy and Vysor work correctly for screen mirroring and recording
+- **Nano CE auto-unlock** — credential cached in device-encrypted storage; game saves and ROM data accessible on Nano boot without entering the lock screen
+- **60fps boot animation** with fade-in/out and XP-style loading bar
+- **System-wide equalizer (GammaEQ)** — per-profile EQ settings
+- **Improved fan daemon** — refined automatic fan control behaviour vs stock
+- **Refined controller defaults** — better deadzones and gamepad configuration out of the box
+- **Disabled system animations** — snappier UI feel
+- **Factory GPU overclock** — Mali-G76 MC4: **850 MHz → 950 MHz** (+11.8%). Benefits GPU-limited emulators (GC/Wii via Dolphin, PSP via PPSSPP at higher resolution). CPU-bound emulators (PS2 via NetherSX2) gain little from this alone.
+- **Improved sleep mode** — sleep/resume fixes vs stock
+
+> [!NOTE]
+> **GammaRGB (LED control):** Performance tips in the v1.3.2 release mention disabling GammaRGB to reduce background CPU overhead. Whether LEDs are functional on your PAM unit varies — do not assume LED control is available unless your unit has addressable LEDs.
+
+### What you lose
+
+- Stock Ayaneo launcher and all Ayaneo-specific apps
+- Google Play Services on the Full variant (Lite variant has no GApps) — install manually via Aurora Store if needed
+- Official Ayaneo OTA updates
+- Any Ayaneo-specific firmware optimisations
+
+### Known issues in v1.3.2 (as of August 2026)
+
+- **Stick drift** — reported in [GammaOS GitHub issue #338](https://github.com/TheGammaSqueeze/GammaOSNext/issues/338), not fixed in stable build
+- **LT button sticking** — reported in issue #338, not fixed in stable build
+- **Heating under sustained load** — no fix in stable build
+
+### Installation
+
+> [!CAUTION]
+> GammaOS flashing has a real brick risk. Back up your stock firmware before proceeding. Do not interrupt the flash process. If you are unsure, stick with stock + Dark Arts.
+
+1. Back up your stock firmware (Ayaneo's official backup guide)
+2. Download GammaOS v1.3.2 for Pocket Air Mini from [github.com/TheGammaSqueeze/GammaOSNext](https://github.com/TheGammaSqueeze/GammaOSNext)
+3. Follow the install instructions on the GammaOS GitHub (Windows + USB cable, SD card or internal storage)
+4. Do a clean boot after flashing — do not restore any configs from stock OS
+
+### After installation
+
+- Install emulators fresh — your stock OS configs will **not** carry over
+- Re-apply GammaEQ and fan settings through the GammaOS settings app
+- Reconfigure ES-DE from scratch
+- Consider disabling GammaRGB in Settings to reduce background CPU overhead
+
+### Who should and shouldn't flash
+
+**Consider GammaOS if:**
+- You already run stock + Dark Arts and want to test the purpose-built alternative
+- You use scrcpy or Vysor for screen mirroring or recording
+- You stream 4K video and want hardware decode working properly
+- You want LED/EQ/fan control without scripting (if your unit supports it)
+
+**Stick with stock + Dark Arts if:**
+- You want the simplest, lowest-risk path — stock + Dark Arts covers most of what GammaOS offers for emulation
+- You rely on Ayaneo-specific apps or launcher
+- You want official OTA updates
+- You are new to handhelds and do not want to troubleshoot post-flash issues
+- You use Google Play Services regularly (Lite variant has no GApps; Full variant has them)
+
+### Credits
+
+GammaOS is developed by **TheGammaSqueeze** ([GitHub](https://github.com/TheGammaSqueeze/GammaOSNext)). The Pocket Air Mini port is part of the v1.3.x release line.
+
+---
+
 ## 📜 Appendix: Must-Play Games per System
 These are curated lists of **must-have games** that run well on the Pocket Air Mini. Focus on legal backups you own. Performance tiers are based on practical testing with recommended configurations. Individual results may vary depending on scene complexity, emulator version, firmware, and device configuration.
 
@@ -630,6 +750,9 @@ Special thanks to:
 - **Nikolai Trukhin (CoolONEOfficial)** — Dolphin configuration insights and optimization contributions.
 - **uriuri89** — Community shader recommendations.
 - **hardy272** — Additional debloat package suggestions.
+- **TheGammaSqueeze** — GammaOS for Pocket Air Mini ([GitHub](https://github.com/TheGammaSqueeze/GammaOSNext)).
+- **BruhMeh** — PAM Stock OS Optimization Guide ([GitHub](https://github.com/BruhMeh/PAM-Stock-OS-Optimization-Guide)) and community testing findings.
+- **Uri (uriuri89)** — Original author behind the BruhMeh optimization guide; Google Play Services hardening and standby bucket recommendations.
 
 Community feedback continues to help refine performance, stability, and usability across different setups.
 
@@ -644,3 +767,4 @@ If this "Zero to Hero" guide helped you build the perfect handheld, consider sup
        style="height: 60px !important; width: 217px !important;"></a>
 
 **Happy Gaming!** 🕹️✨
+
