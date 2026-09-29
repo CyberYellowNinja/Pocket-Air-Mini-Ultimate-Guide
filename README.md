@@ -20,38 +20,29 @@
 
 ---
 
-## 🧭 Where Should I Start?
-
-| Your goal | Go to | Difficulty |
-|-----------|-------|------------|
-| 🎯 **"I just want to play games"** | [Phases 1–6](#phase-1-preparation--materials): setup, ES-DE, emulators | 🟢 Beginner → 🟡 Intermediate |
-| ⚡ **"I want better battery, fan and sound"** | [Phases 7 & 7.5](#phase-7-system-optimization--battery-health) | 🟡 Intermediate → 🟠 Advanced |
-| 🥷 **"I want the maximum from my device"** | [Phase 8: Dark Arts](#phase-8-the-dark-arts) or [Phase 10: GammaOS](#phase-10-alternative-os-gammaos) | 🔴 Advanced |
-| 🕹️ **"What should I play?"** | [Appendix: Must-Play Games](#appendix-must-play-games-per-system) | 🟢 Beginner |
-
-**Difficulty legend:** 🟢 Beginner · 🟡 Intermediate · 🟠 Advanced · 🔴 Expert / Risky
-
----
-
 ## 📋 Table of Contents
 
-1. [🛠️ Phase 1: Preparation & Materials](#phase-1-preparation--materials)
-2. [💾 SD Card Setup & Format](#sd-card-setup--format)
-3. [🍳 Phase 2: Mixing the Ingredients](#phase-2-mixing-the-ingredients)
-4. [📂 Phase 3: Finding Your Library](#phase-3-finding-your-library)
-5. [🎨 Phase 4: ES-DE Initial Setup & Folders](#phase-4-es-de-initial-setup--folders)
-6. [⚙️ Phase 5: Emulator Configuration](#phase-5-emulator-configuration)
-7. [🎨 Phase 6: ES-DE Advanced Setup & Scraping](#phase-6-es-de-advanced-setup--scraping)
-8. [⚡ Phase 7: System Optimization & Battery Health](#phase-7-system-optimization--battery-health)
-9. [⚡ Phase 7.5: Performance & Audio Optimization Profiles](#phase-75-performance--audio-optimization-profiles)
-10. [🥷 Phase 8: The Dark Arts](#phase-8-the-dark-arts)
-11. [📱 Phase 9: Removing Touch Overlays](#phase-9-removing-touch-overlays)
-12. [🚀 Phase 10: Alternative OS: GammaOS](#phase-10-alternative-os-gammaos)
-13. [📜 Appendix: Must-Play Games per System](#appendix-must-play-games-per-system)
-14. [🤝 Community Contributions & Credits](#community-contributions--credits)
-
 > [!NOTE]
-> Use the links above to jump directly to any section.
+> Click any section to jump straight to it. **Just want to play?** Follow Phases 1–6. Phases 7–10 are optional upgrades.
+
+| # | Section | Difficulty |
+|---|---------|------------|
+| 1 | [🛠️ Phase 1: Preparation & Materials](#phase-1-preparation--materials) | 🟢 Beginner |
+| 2 | [💾 SD Card Setup & Format](#sd-card-setup--format) | 🟢 Beginner |
+| 3 | [🍳 Phase 2: Mixing the Ingredients](#phase-2-mixing-the-ingredients) | 🟢 Beginner |
+| 4 | [📂 Phase 3: Finding Your Library](#phase-3-finding-your-library) | 🟢 Beginner |
+| 5 | [🎨 Phase 4: ES-DE Initial Setup & Folders](#phase-4-es-de-initial-setup--folders) | 🟡 Intermediate |
+| 6 | [⚙️ Phase 5: Emulator Configuration](#phase-5-emulator-configuration) | 🟡 Intermediate |
+| 7 | [🎨 Phase 6: ES-DE Advanced Setup & Scraping](#phase-6-es-de-advanced-setup--scraping) | 🟡 Intermediate |
+| 8 | [⚡ Phase 7: System Optimization & Battery Health](#phase-7-system-optimization--battery-health) | 🟡 Intermediate |
+| 9 | [🚀 Phase 7.5: Performance & Audio Optimization Profiles](#phase-75-performance--audio-optimization-profiles) | 🟠 Advanced |
+| 10 | [🥷 Phase 8: The Dark Arts](#phase-8-the-dark-arts) | 🔴 Expert |
+| 11 | [📱 Phase 9: Removing Touch Overlays](#phase-9-removing-touch-overlays) | 🟢 Beginner |
+| 12 | [🚀 Phase 10: Alternative OS: GammaOS](#phase-10-alternative-os-gammaos) | 🔴 Expert |
+| 13 | [📜 Appendix: Must-Play Games per System](#appendix-must-play-games-per-system) | 🟢 Beginner |
+| 14 | [🤝 Community Contributions & Credits](#community-contributions--credits) | — |
+
+**Difficulty legend:** 🟢 Beginner · 🟡 Intermediate · 🟠 Advanced · 🔴 Expert / Risky
 
 ---
 
