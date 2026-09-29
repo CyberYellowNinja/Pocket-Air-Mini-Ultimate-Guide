@@ -1,0 +1,5 @@
+.md-typeset h1 { color: var(--md-default-fg-color); font-weight: 700; }
+.md-typeset .grid.cards > ul > li { transition: transform .15s, box-shadow .15s; }
+.md-typeset .grid.cards > ul > li:hover { transform: translateY(-3px); }
+.md-typeset .md-button { margin: .3rem; }
+.md-typeset details { margin: .6rem 0; }
