@@ -3,3 +3,11 @@
 .md-typeset .grid.cards > ul > li:hover { transform: translateY(-3px); }
 .md-typeset .md-button { margin: .3rem; }
 .md-typeset details { margin: .6rem 0; }
+
+/* Material scales the root font up on wide screens (>=1600px); keep it compact instead. */
+html { font-size: 106.25%; }
+@media (min-width: 100em) { html { font-size: 106.25%; } .md-grid { max-width: 72rem; } }
+@media (min-width: 125em) { html { font-size: 106.25%; } .md-grid { max-width: 72rem; } }
+.md-typeset { font-size: 0.78rem; }
+.md-typeset h1 { font-size: 1.9em; }
+.md-typeset .admonition, .md-typeset details { font-size: 0.72rem; }
