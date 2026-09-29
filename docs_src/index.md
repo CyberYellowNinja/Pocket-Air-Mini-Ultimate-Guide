@@ -31,10 +31,10 @@ hide:
 
 <div style="text-align:center" markdown>
 
-If this guide saved you hours of frustration, consider supporting my work!
+<sub>Found this guide useful? You can support it here. Thank you! 🙏</sub>
 
-<a href="https://www.buymeacoffee.com/cyberyellowninja" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50"></a>
+<a href="https://www.buymeacoffee.com/cyberyellowninja" target="_blank"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-FFDD00?style=flat&logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee" height="24"></a>
 &nbsp;
-<a href="https://ko-fi.com/cyberyellowninja" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi5.png?v=3" alt="Buy Me a Coffee at ko-fi.com" height="50"></a>
+<a href="https://ko-fi.com/cyberyellowninja" target="_blank"><img src="https://img.shields.io/badge/Ko--fi-support-FF5E5B?style=flat&logo=ko-fi&logoColor=white" alt="Support on Ko-fi" height="24"></a>
 
 </div>

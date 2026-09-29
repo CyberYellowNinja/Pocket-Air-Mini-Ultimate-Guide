@@ -7,6 +7,7 @@ edit_uri: edit/main/README.md
 
 theme:
   name: material
+  custom_dir: overrides
   icon:
     logo: material/gamepad-variant
     repo: fontawesome/brands/github
