@@ -1,19 +1,36 @@
-# 🎮 Ayaneo Pocket Air Mini: Zero to Hero Setup Guide
+<div align="center">
 
-Welcome to the ultimate guide for transforming your Ayaneo Pocket Air Mini (PAM) into a high-performance retro gaming powerhouse. This guide covers everything from the initial unboxing to "Dark Arts" system optimizations.
+# 🎮 Ayaneo Pocket Air Mini
+## Zero to Hero Setup Guide
+
+**Turn your Ayaneo Pocket Air Mini (PAM) into a high-performance retro gaming powerhouse, from unboxing to "Dark Arts" system optimizations.**
+
+![Device](https://img.shields.io/badge/Device-Ayaneo%20Pocket%20Air%20Mini-blue?style=for-the-badge)
+![Phases](https://img.shields.io/badge/Phases-10-orange?style=for-the-badge)
+![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-green?style=for-the-badge)
+![Language](https://img.shields.io/badge/Language-English-lightgrey?style=for-the-badge)
+
+<a href="https://www.buymeacoffee.com/cyberyellowninja" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50"></a>
+&nbsp;
+<a href="https://ko-fi.com/cyberyellowninja" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi5.png?v=3" alt="Buy Me a Coffee at ko-fi.com" height="50"></a>
+
+*If this guide saves you hours of frustration, consider supporting my work!*
+
+</div>
 
 ---
 
-### ☕ Support My Work
-If this guide saves you hours of frustration and helps you build your dream handheld, consider buying me a coffee!
+## 🧭 Where Should I Start?
 
-<a href="https://www.buymeacoffee.com/cyberyellowninja" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+| Your goal | Go to | Difficulty |
+|-----------|-------|------------|
+| 🎯 **"I just want to play games"** | [Phases 1–6](#phase-1-preparation--materials): setup, ES-DE, emulators | 🟢 Beginner → 🟡 Intermediate |
+| ⚡ **"I want better battery, fan and sound"** | [Phases 7 & 7.5](#phase-7-system-optimization--battery-health) | 🟡 Intermediate → 🟠 Advanced |
+| 🥷 **"I want the maximum from my device"** | [Phase 8: Dark Arts](#phase-8-the-dark-arts) or [Phase 10: GammaOS](#phase-10-alternative-os-gammaos) | 🔴 Advanced |
+| 🕹️ **"What should I play?"** | [Appendix: Must-Play Games](#appendix-must-play-games-per-system) | 🟢 Beginner |
 
-<a href="https://ko-fi.com/cyberyellowninja" target="_blank">
-  <img src="https://storage.ko-fi.com/cdn/kofi5.png?v=3"
-       alt="Buy Me a Coffee at ko-fi.com"
-       style="height: 60px !important; width: 217px !important;"></a>
-       
+**Difficulty legend:** 🟢 Beginner · 🟡 Intermediate · 🟠 Advanced · 🔴 Expert / Risky
+
 ---
 
 ## 📋 Table of Contents
@@ -40,7 +57,7 @@ If this guide saves you hours of frustration and helps you build your dream hand
 
 ## 🛠️ Phase 1: Preparation & Materials
 
-<span>🟢 Beginner</span>
+> **🟢 Difficulty: Beginner**
 
 Before we begin, ensure you have the following ready:
 * **The Device:** Ayaneo Pocket Air Mini (charged to at least 60%).
@@ -57,7 +74,7 @@ Before we begin, ensure you have the following ready:
 
 ## 💾 SD Card Setup & Format
 
-<span>🟢 Beginner</span>
+> **🟢 Difficulty: Beginner**
 
 Your SD card stores all ROMs, BIOS files, emulator configs, and save states. Getting this right upfront saves pain later.
 
@@ -102,7 +119,7 @@ The guide uses standard gaming controller terminology. Here is a quick reference
 
 ## 🍳 Phase 2: Mixing the Ingredients (The Recipe for Success)
 
-<span>🟢 Beginner</span>
+> **🟢 Difficulty: Beginner**
 
 ### **1. System & Firmware Updates**
 Ensure the "brain" of your device is up to date.
@@ -128,7 +145,7 @@ Crucial for heavy systems like PS2 or Switch:
 
 ## 📂 Phase 3: Finding Your Library (The Directions)
 
-<span>🟢 Beginner</span>
+> **🟢 Difficulty: Beginner**
 
 I cannot provide direct links, but I can show you the way.
 
@@ -141,7 +158,7 @@ I cannot provide direct links, but I can show you the way.
 
 ## 🎨 Phase 4: ES-DE Initial Setup & Folders
 
-<span>🟡 Intermediate</span>
+> **🟡 Difficulty: Intermediate**
 
 1. Open **ES-DE**.
 2. **Data Directory:** Select your **SD Card** -> Create folder `ES-DE` -> Select **"Use this folder"**.
@@ -159,7 +176,7 @@ Using **ZArchiver**, navigate to your downloaded `tiny set best go-games`:
 > **Daijishō as Default Launcher — After Firmware Updates:** If you use Daijishō as your default launcher and receive a firmware update from Ayaneo, the update process may reset your default launcher to the stock Ayaneo launcher. After any firmware update, go to **Settings → Apps → Default Apps → Home App** and re-select Daijishō. *Source: reported — known Android behavior pattern, PAM-specific confirmation pending.*
 ## ⚙️ Phase 5: Emulator Configuration (The Pro Setup)
 
-<span>🟡 Intermediate</span>
+> **🟡 Difficulty: Intermediate**
 
 ### **1. RetroArch (Multi-System Hub)**
 Open RetroArch and grant permissions.
@@ -328,7 +345,7 @@ This combo reduces GPU overhead while preserving visual integrity in gameplay-he
 
 ## 🎨 Phase 6: ES-DE Advanced Setup & Scraping
 
-<span>🟡 Intermediate</span>
+> **🟡 Difficulty: Intermediate**
 
 Make your collection look professional and set ES-DE as your permanent home.
 
@@ -357,7 +374,7 @@ Make your collection look professional and set ES-DE as your permanent home.
 
 ## ⚡ Phase 7: System Optimization & Battery Health
 
-<span>🟡 Intermediate</span>
+> **🟡 Difficulty: Intermediate**
 
 ### **1. Developer Performance Tweaks**
 Go to **Settings > System > Developer Options**:
@@ -393,7 +410,8 @@ Go to **Settings > System > Developer Options**:
 
 ## 🚀 Phase 7.5: Performance & Audio Optimization Profiles
 
-<span>🟠 Advanced</span>
+> **🟠 Difficulty: Advanced**
+
 ### AYASpace Quick Menu (IO Button)
 
 If your PAM has the AYASpace app installed, pressing the **IO button** (the small button on the side of the device) opens the AYASpace quick menu at any time — even in-game. From here you can:
@@ -476,7 +494,8 @@ After applying both profiles:
 
 ## 🥷 Phase 8: The Dark Arts (System Debloating)
 
-<span>🔴 Advanced</span>
+> **🔴 Difficulty: Expert**
+
 This stage will disable unnecessary system background processes to free up RAM and CPU cycles. We will use **Shizuku**, **QuickEdit**, and **Termux**.
 
 #### 1. Setup Shizuku
@@ -534,7 +553,9 @@ pm disable-user --user 0 com.mediatek.batterywarning
 Safe to disable on a gaming-only device.  
 Do **NOT** apply if you use enterprise features, contact/calendar sync, MIDI, or advanced networking.
 
-### Disable via Termux:
+<details>
+<summary><b>Show the additional debloat commands</b></summary>
+
 ```bash
 pm disable-user --user 0 com.android.pacprocessor  
 pm disable-user --user 0 com.android.proxyhandler  
@@ -550,6 +571,8 @@ pm disable-user --user 0 com.android.soundpicker
 pm disable-user --user 0 com.android.music  
 pm disable-user --user 0 com.android.providers.partnerbookmarks
 ```
+
+</details>
 
 ### ♻ Undo Debloat (Restore Disabled Packages)
 
@@ -665,7 +688,7 @@ Includes: automated RetroArch nightly + cores + shaders, performance tuning scri
 
 ## 📱 Phase 9: Removing Touch Overlays
 
-<span>🟢 Beginner</span>
+> **🟢 Difficulty: Beginner**
 
 Standalone emulators often enable touch icons by default, which can be distracting on a controller-first handheld.  
 Use the following paths to hide them for a clean, console-like experience:
@@ -695,7 +718,7 @@ If your collection is massive and you want ES-DE to open instantly, you can disa
 
 ## 🚀 Phase 10 — Alternative OS: GammaOS
 
-<span>🔴 Advanced</span>
+> **🔴 Difficulty: Expert**
 
 > [!WARNING]
 > **GammaOS replaces your stock OS.** Not a debloat — a full OS replacement. If you are happy with stock Android + Dark Arts (Phase 8), skip this phase entirely.
@@ -791,8 +814,8 @@ These are curated lists of **must-have games** that run well on the Pocket Air M
 - **Tier B**: Minor drops (playable, some tweaks).
 - **Tier C**: Playable with tweaks (demanding scenes, underclock).
 
-**Summary:**
-PS1 (DuckStation – Mostly Tier A)
+<details>
+<summary><b>PS1 (DuckStation – Mostly Tier A)</b></summary>
 
 | Game                  | Why Must-Play                  | Tier / Notes |
 |-----------------------|--------------------------------|--------------|
@@ -804,8 +827,10 @@ PS1 (DuckStation – Mostly Tier A)
 | Tony Hawk's Pro Skater 2 | Skateboarding fun            | A           |
 | Parasite Eve          | Horror RPG                    | A           |
 
-**Summary:**
-PS2 (NetherSX2 – Mix A/B/C)
+</details>
+
+<details>
+<summary><b>PS2 (NetherSX2 – Mix A/B/C)</b></summary>
 
 | Game                  | Why Must-Play                  | Tier / Notes |
 |-----------------------|--------------------------------|--------------|
@@ -817,8 +842,10 @@ PS2 (NetherSX2 – Mix A/B/C)
 | Katamari Damacy       | Unique rolling fun            | A           |
 | SSX 3                 | Snowboarding tricks           | A           |
 
-**Summary:**
-PSP (PPSSPP – Mostly A)
+</details>
+
+<details>
+<summary><b>PSP (PPSSPP – Mostly A)</b></summary>
 
 | Game                  | Why Must-Play                  | Tier / Notes |
 |-----------------------|--------------------------------|--------------|
@@ -830,8 +857,10 @@ PSP (PPSSPP – Mostly A)
 | Jeanne d'Arc          | Tactical RPG                  | A           |
 | Castlevania: The Dracula X Chronicles | Action remake  | A           |
 
-**Summary:**
-GameCube (Dolphin – Mix A/B)
+</details>
+
+<details>
+<summary><b>GameCube (Dolphin – Mix A/B)</b></summary>
 
 | Game                  | Why Must-Play                  | Tier / Notes |
 |-----------------------|--------------------------------|--------------|
@@ -843,8 +872,10 @@ GameCube (Dolphin – Mix A/B)
 | Tales of Symphonia    | RPG with co-op                | B           |
 | Eternal Darkness      | Horror mind-bending           | A           |
 
-**Summary:**
-Wii (Dolphin – Mix B/C)
+</details>
+
+<details>
+<summary><b>Wii (Dolphin – Mix B/C)</b></summary>
 
 | Game                  | Why Must-Play                  | Tier / Notes |
 |-----------------------|--------------------------------|--------------|
@@ -855,8 +886,10 @@ Wii (Dolphin – Mix B/C)
 | Punch-Out!!           | Boxing fun                    | A           |
 | Harvest Moon: Animal Parade | Farming sim          | A           |
 
-**Summary:**
-N64 (Mupen64Plus FZ – Mostly A)
+</details>
+
+<details>
+<summary><b>N64 (Mupen64Plus FZ – Mostly A)</b></summary>
 
 | Game                  | Why Must-Play                  | Tier / Notes |
 |-----------------------|--------------------------------|--------------|
@@ -869,8 +902,10 @@ N64 (Mupen64Plus FZ – Mostly A)
 | Star Fox 64           | Rail shooter                  | A           |
 | Kirby 64: The Crystal Shards | Cute platformer     | A           |
 
-**Summary:**
-DS/3DS (MelonDS/Azahar – A for DS, B for 3DS)
+</details>
+
+<details>
+<summary><b>DS/3DS (MelonDS/Azahar – A for DS, B for 3DS)</b></summary>
 
 | Game                  | Why Must-Play                  | Tier / Notes |
 |-----------------------|--------------------------------|--------------|
@@ -881,6 +916,8 @@ DS/3DS (MelonDS/Azahar – A for DS, B for 3DS)
 | Bravely Default (3DS) | RPG turn-based                | B           |
 | Super Street Fighter IV 3D (3DS) | Fighting          | A           |
 | Azure Striker Gunvolt (3DS) | Action platformer     | A           |
+
+</details>
 
 > [!IMPORTANT]
 > **Legal Note:** Only use ROMs from games you own.
@@ -930,12 +967,12 @@ Community feedback continues to help refine performance, stability, and usabilit
 ### ☕ Final Support
 If this "Zero to Hero" guide helped you build the perfect handheld, consider supporting my work!
 
-<a href="https://www.buymeacoffee.com/cyberyellowninja" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<div align="center">
 
-<a href="https://ko-fi.com/cyberyellowninja" target="_blank">
-  <img src="https://storage.ko-fi.com/cdn/kofi5.png?v=3"
-       alt="Buy Me a Coffee at ko-fi.com"
-       style="height: 60px !important; width: 217px !important;"></a>
+<a href="https://www.buymeacoffee.com/cyberyellowninja" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50"></a>
+&nbsp;
+<a href="https://ko-fi.com/cyberyellowninja" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi5.png?v=3" alt="Buy Me a Coffee at ko-fi.com" height="50"></a>
 
 **Happy Gaming!** 🕹️✨
 
+</div>
