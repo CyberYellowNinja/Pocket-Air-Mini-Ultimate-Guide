@@ -1,0 +1,71 @@
+site_name: Pocket Air Mini Ultimate Guide
+site_description: Zero to Hero setup guide for the Ayaneo Pocket Air Mini - emulators, ES-DE, optimization, debloating and GammaOS.
+site_url: https://cyberyellowninja.github.io/Pocket-Air-Mini-Ultimate-Guide/
+repo_url: https://github.com/CyberYellowNinja/Pocket-Air-Mini-Ultimate-Guide
+repo_name: Pocket-Air-Mini-Ultimate-Guide
+edit_uri: edit/main/README.md
+
+theme:
+  name: material
+  icon:
+    logo: material/gamepad-variant
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle: { icon: material/weather-night, name: Switch to dark mode }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle: { icon: material/weather-sunny, name: Switch to light mode }
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - preparation.md
+      - setup.md
+  - Emulators & Frontend:
+      - emulators.md
+      - scraping.md
+  - Optimization:
+      - optimization.md
+      - dark-arts.md
+      - overlays.md
+      - gammaos.md
+  - Reference:
+      - games.md
+      - about.md

@@ -5,6 +5,8 @@
 
 **Turn your Ayaneo Pocket Air Mini (PAM) into a high-performance retro gaming powerhouse, from unboxing to "Dark Arts" system optimizations.**
 
+**📖 [Read the guide online](https://cyberyellowninja.github.io/Pocket-Air-Mini-Ultimate-Guide/)** — searchable, dark mode, mobile friendly.
+
 ![Device](https://img.shields.io/badge/Device-Ayaneo%20Pocket%20Air%20Mini-blue?style=for-the-badge)
 ![Phases](https://img.shields.io/badge/Phases-10-orange?style=for-the-badge)
 ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-green?style=for-the-badge)
